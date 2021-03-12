@@ -4,8 +4,9 @@
 <br>
 <br>
 <% if current_user %>
-<!-- 	<%#= simple_form_for do |f| %>
+	<%= simple_form_for(@gif) do |f| %>
 	  <h4>Adicione seu Gif aqui</h4>
-	  <%#= f.input :photo, as: :file %>
-	<%# end %> -->
+	  <%= f.input :image, as: :file %>
+	  <%= f.button :submit %>
+	<% end %>
 <% end %>
