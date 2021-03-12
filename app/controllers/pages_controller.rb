@@ -3,5 +3,6 @@ class PagesController < ApplicationController
 
   def home
   	@gif = Gif.new
+  	@gifs = Gif.all
   end
 end
