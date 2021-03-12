@@ -3,6 +3,7 @@
 <p>
   <strong>User:</strong>
   <%= @gif.user_id %>
+  <%= cl_image_tag @gif.image.key, height: 600, width: 700, gravity: :auto, crop: :fill %>
 </p>
 
 <%= link_to 'Edit', edit_gif_path(@gif) %> |
