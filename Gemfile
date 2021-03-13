@@ -67,3 +67,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #Controle de Tags
 gem 'acts-as-taggable-on', '~> 7.0'
+
+#Twitter API
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem "omniauth-rails_csrf_protection"
