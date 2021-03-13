@@ -16,15 +16,46 @@
 </div>
 
 <div class="row">
-  <% @gifs.each do |gif| %>
-    <div class="col-md-3 mr-4">
-      <div class="card" style="width: 18rem;">
-        <%= cl_image_tag gif.image.key, crop: :fill %>
-        <div class="card-body">
-          <span class="text-muted">Tags:</span>
-          <%= render gif.tags %>
-        </div>
-      </div>
-    </div>
+	<% if @termo %>
+		<div class="col-md-12">
+			<h4>Resultados para <%= @termo %></h4>
+		</div>
+  		<% @gifs.each do |gif| %>
+	    <div class="col-md-3">
+	      <div class="card w-100" style="width: 18rem;">
+	        <%= cl_image_tag gif.image.key, crop: :fill %>
+	        <div class="card-body">
+	          <span class="text-muted">Tags:</span>
+	          <%= render gif.tags %>
+	        </div>
+	      </div>
+	    </div>
   <% end %>
+  <% else %>
+  	<% @gifsall.each do |gif| %>
+	    <div class="col-md-3">
+	      <div class="card w-100" style="width: 18rem;">
+	        <%= cl_image_tag gif.image.key, crop: :fill %>
+	        <div class="card-body">
+	          <span class="text-muted">Tags:</span>
+	          <%= render gif.tags %>
+	        </div>
+	      </div>
+    	</div>
+  	<% end %>
+  <% end %>
+
+  <div class="col-md-12 mt-4">
+  	<h4>Ranking de Tags</h4>
+  	<ol>
+  		<% @mostuseds.each do |tag| %>
+  		<li><%= tag.name %></li>
+  		<% end %>
+  	</ol>
+  </div>
+
+
+
+
+
 </div>

@@ -19,5 +19,4 @@
 
 <%= render "devise/shared/links" %>
 <br>
-<h3>Quer fazer o login por Twitter?</h3>
-<p><button type="button" class="btn btn-primary">Twitter</button></p>
+<%= link_to "Entrar com o twitter", user_twitter_omniauth_authorize_path, class: "btn btn-block btn-outline-primary text-center", method: :post %>

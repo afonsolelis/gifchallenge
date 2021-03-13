@@ -3,6 +3,9 @@ class PagesController < ApplicationController
 
   def home
   	@gif = Gif.new
-  	@gifs = Gif.all
+  	@termo = params[:pesquisa]
+  	@gifs = Gif.tagged_with(["#{params[:pesquisa]}"])
+  	@mostuseds = ActsAsTaggableOn::Tag.most_used(10)
+  	@gifsall = Gif.all
   end
 end

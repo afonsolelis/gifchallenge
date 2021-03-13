@@ -10,6 +10,12 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
+      <%= form_tag(root_path, method: :get, class: "form-inline mr-5") %>
+        <input class= "form-control" type="search" name="pesquisa" placeholder="digite sua busca">
+        <button class="btn btn-outline-primary" type="submit">Pesquisa</button>
+      </form>
+
+
       <% if user_signed_in? %>
         <li class="nav-item active">
           <%= current_user.email %>

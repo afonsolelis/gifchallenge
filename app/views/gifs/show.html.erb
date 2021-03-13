@@ -1,11 +1,18 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>User:</strong>
-  <%= @gif.user_id %>
-  <%= cl_image_tag @gif.image.key, height: 600, width: 700, gravity: :auto, crop: :fill %>
-  <%= render @gif.tags %>
+<div class="col-md-6 mr-4">
+  <div class="card" style="width: 18rem;">
+    <%= cl_image_tag @gif.image.key, crop: :fill %>
+    <div class="card-body">
+      <span class="text-muted">Tags:</span>
+      <%= render @gif.tags %>
+    </div>
+  </div>
+</div>
 </p>
 
 <%= link_to 'Edit', edit_gif_path(@gif) %> |
 <%= link_to 'Back', gifs_path %>
+
+
