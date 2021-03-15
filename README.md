@@ -29,7 +29,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="http://cdn.lowgif.com/full/a1dfe1cbcdca4104-gifs-challenge-2017.gif" width="160" height="160">
+    <img src="http://cdn.lowgif.com/full/a1dfe1cbcdca4104-gifs-challenge-2017.gif">
   </a>
 
   <h3 align="center">Best-README-Template</h3>
