@@ -50,6 +50,7 @@ Project created for the internship selection process of the company OPSICO.
 * [Devise](https://github.com/heartcombo/devise)
 * [Cloudinary](https://cloudinary.com/)
 * [LeWagon Rails Template](https://github.com/lewagon/rails-templates) 
+* [ActsAsTaggableOn](https://github.com/mbleigh/acts-as-taggable-on)
 
 
 <!-- CONTRIBUTING -->
