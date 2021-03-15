@@ -40,13 +40,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 Project created for the internship selection process of the company OPSICO.
 
 ### Built With
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [Bootstrap](https://getbootstrap.com)
 * [Rails](https://rubyonrails.org/)
 * [Omniauth](https://github.com/omniauth/omniauth)
